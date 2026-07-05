@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Malenia — Luxury Watch Support & Inquiries</title>
+  <meta name="description" content="Get in touch with Malenia for watch inquiries, orders, and support. We're here to help you find your perfect luxury timepiece."/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    .map-embed {
+      width:100%; height:300px; border-radius:var(--radius-md);
+      overflow:hidden; border:1px solid var(--gold-border);
+      background:var(--bg-card);
+      display:flex; align-items:center; justify-content:center;
+      font-family:'Cinzel',serif; letter-spacing:0.2em;
+      font-size:0.75rem; color:var(--text-muted);
+      flex-direction:column; gap:1rem;
+      margin-top:1.5rem;
+    }
+    .map-embed svg { color:var(--gold); opacity:0.5; }
+    .faq-item {
+      border:1px solid var(--border-subtle); border-radius:var(--radius-md);
+      overflow:hidden; margin-bottom:0.8rem; transition:var(--transition-fast);
+    }
+    .faq-item:hover { border-color:var(--gold-border); }
+    .faq-question {
+      padding:1.2rem 1.5rem; display:flex; align-items:center; justify-content:space-between;
+      cursor:pointer; font-weight:500;
+      font-size:0.92rem;
+    }
+    .faq-question .icon { color:var(--gold); font-size:1.2rem; transition:transform 0.3s; }
+    .faq-item.open .faq-question .icon { transform:rotate(45deg); }
+    .faq-answer { max-height:0; overflow:hidden; transition:max-height 0.4s ease; }
+    .faq-item.open .faq-answer { max-height:200px; }
+    .faq-answer-inner { padding:0 1.5rem 1.2rem; color:var(--text-secondary); font-size:0.9rem; line-height:1.7; }
+  </style>
+</head>
+<body>
+
+<!-- ═══ NAVBAR ═══ -->
+<nav class="navbar scrolled">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+      <svg class="nav-logo-icon" viewBox="0 0 40 40" fill="none">
+        <circle cx="20" cy="20" r="19" stroke="#C9A84C" stroke-width="1.5" opacity="0.6"/>
+        <path d="M20 6 L24 14 L20 12 L16 14 Z" fill="#C9A84C" opacity="0.8"/>
+        <path d="M20 12 Q28 18 26 26 Q20 22 14 26 Q12 18 20 12Z" fill="none" stroke="#C9A84C" stroke-width="1.2"/>
+        <circle cx="20" cy="22" r="2.5" fill="#C9A84C"/>
+        <path d="M20 22 L20 15" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M20 22 L25 22" stroke="#C9A84C" stroke-width="1" stroke-linecap="round" opacity="0.7"/>
+      </svg>
+      <div><div class="nav-logo-text">MALENIA</div><div class="nav-logo-sub">Est. 2026</div></div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="cart.html" class="nav-icon-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        <span class="cart-badge" style="display:none">0</span>
+      </a>
+      <button class="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-nav-overlay"></div>
+<nav class="mobile-nav">
+  <button class="mobile-nav-close">✕</button>
+  <a href="index.html">Home</a><a href="shop.html">Shop</a>
+  <a href="about.html">About</a><a href="contact.html">Contact</a>
+  <a href="cart.html">Cart</a>
+</nav>
+
+<!-- ═══ PAGE HERO ═══ -->
+<div class="page-hero">
+  <p class="section-subtitle" style="justify-content:center;">We'd Love to Hear From You</p>
+  <h1>Get In <span class="gold-text">Touch</span></h1>
+  <p>Whether you have a question about a timepiece, an order, or anything else — our team is ready to assist.</p>
+</div>
+
+<!-- ═══ CONTACT ═══ -->
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Left: Info -->
+      <div class="fade-in">
+        <p class="section-subtitle">Contact Details</p>
+        <h2>Reach Out to <span class="gold-text">Malenia</span></h2>
+        <div class="gold-divider left"></div>
+        <p>Our dedicated team of watch specialists is available 7 days a week to assist you with product inquiries, order support, and personalized recommendations.</p>
+
+        <div style="margin-top:2rem;">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.97 1.18 2 2 0 012.95 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:+8801700000000">+880 170-000-0000</a>
+              <p>Mon–Sun, 9AM – 9PM</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:hello@maleniawatches.com">hello@maleniawatches.com</a>
+              <p>We reply within 2-4 hours</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <h4>Location</h4>
+              <p>Dhaka, Bangladesh</p>
+              <p>Nationwide Delivery Available</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 2H3v16h5l4 4 4-4h5V2z"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="14" x2="12" y2="14"/></svg>
+            </div>
+            <div>
+              <h4>WhatsApp</h4>
+              <a href="https://wa.me/8801700000000">Chat With Us</a>
+              <p>Instant replies during business hours</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-embed">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Dhaka, Bangladesh</span>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="fade-in">
+        <div class="contact-form-wrap">
+          <p class="section-subtitle" style="justify-content:flex-start;">Send a Message</p>
+          <h3>How Can We <span class="gold-text">Help You?</span></h3>
+          <form id="contact-form" style="margin-top:2rem;">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" class="form-input" placeholder="Your first name" required/>
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" class="form-input" placeholder="Your last name"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" class="form-input" placeholder="your@email.com" required/>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" class="form-input" placeholder="+880 ..."/>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" class="form-input sort-select" style="width:100%;padding:0.9rem 1.2rem;">
+                <option value="">Select a subject</option>
+                <option>Product Inquiry</option>
+                <option>Order Support</option>
+                <option>Return / Refund</option>
+                <option>Watch Recommendation</option>
+                <option>Bulk / Corporate Order</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" class="form-input" placeholder="Tell us how we can help you..." rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FAQ ═══ -->
+<section class="section" style="background:var(--bg-secondary);">
+  <div class="container">
+    <div class="section-header fade-in">
+      <p class="section-subtitle">FAQ</p>
+      <h2>Frequently Asked <span class="gold-text">Questions</span></h2>
+      <div class="gold-divider"></div>
+    </div>
+    <div style="max-width:800px; margin:0 auto;" class="fade-in">
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this.parentElement)">
+          Are all watches on Malenia authentic?
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes, absolutely. Every single watch we carry is rigorously authenticated before being listed. We source directly from authorized distributors and provide a certificate of authenticity with every purchase.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this.parentElement)">
+          How long does delivery take?
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-answer"><div class="faq-answer-inner">Standard delivery within Dhaka takes 1-2 business days. Nationwide delivery takes 3-5 business days. All orders are shipped in our premium gift packaging with tracking information provided.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this.parentElement)">
+          What is your return policy?
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-answer"><div class="faq-answer-inner">We offer a full 30-day return policy, no questions asked. If for any reason you are not completely satisfied, contact us within 30 days of delivery and we will arrange a full refund or exchange.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this.parentElement)">
+          Do you offer corporate / bulk ordering?
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes! We have special pricing for corporate gifts and bulk orders. Please contact us via the form above or email us at corporate@maleniawatches.com and our team will get back to you within 24 hours.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this.parentElement)">
+          Can I get gift wrapping and a personalized message?
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-answer"><div class="faq-answer-inner">Absolutely! All Malenia orders come in our signature luxury box. You can add a personalized message card during checkout at no extra cost.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this.parentElement)">
+          What payment methods do you accept?
+          <span class="icon">+</span>
+        </div>
+        <div class="faq-answer"><div class="faq-answer-inner">We accept bKash, Nagad, Visa, Mastercard, and cash on delivery (COD) for orders within Dhaka. We also offer easy installment plans on selected products.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ NEWSLETTER ═══ -->
+<section class="newsletter-section">
+  <div class="container">
+    <div class="newsletter-content fade-in">
+      <p class="section-subtitle" style="justify-content:center;">Stay Connected</p>
+      <h2>Join The <span class="gold-text">Inner Circle</span></h2>
+      <p>Subscribe for exclusive watch drops, member-only discounts, and expert horological content.</p>
+      <form class="newsletter-form" onsubmit="return false;">
+        <input type="email" placeholder="Your email address"/>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>MALENIA</h3>
+        <p style="font-family:'Cinzel',serif;font-size:0.62rem;letter-spacing:0.2em;color:var(--gold-dark);">EST. 2026</p>
+        <p>Curating the world's finest timepieces for those who understand that elegance is measured in seconds.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-btn">f</a><a href="#" class="social-btn">in</a>
+          <a href="#" class="social-btn">𝕏</a><a href="#" class="social-btn">▶</a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Collections</h4><ul>
+        <li><a href="shop.html">Men's Watches</a></li><li><a href="shop.html">Ladies' Watches</a></li>
+        <li><a href="shop.html">Sport Watches</a></li><li><a href="shop.html">Luxury Pieces</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Brands</h4><ul>
+        <li><a href="shop.html">Poedagar</a></li><li><a href="shop.html">Skemei</a></li>
+        <li><a href="shop.html">Olives</a></li><li><a href="shop.html">Hublot</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Help</h4><ul>
+        <li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li>
+        <li><a href="#">Shipping</a></li><li><a href="#">Returns</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Malenia. All rights reserved.</p>
+      <p>Privacy Policy · Terms of Service</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+function toggleFaq(item) {
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+</script>
+</body>
+</html>
